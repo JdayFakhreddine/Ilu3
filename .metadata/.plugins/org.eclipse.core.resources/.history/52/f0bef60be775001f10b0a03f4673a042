@@ -1,9 +1,8 @@
 package carte;
 
-public class DebutLimite extends Limite {
+public class DebutLimite {
 
 	public DebutLimite() {
-		
 		// TODO Auto-generated constructor stub
 	}
 

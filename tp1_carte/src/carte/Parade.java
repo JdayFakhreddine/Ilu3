@@ -1,9 +1,11 @@
 package carte;
 
-public class Parade {
+public class Parade extends Bataille {
 
-	public Parade() {
+	public Parade(Type type){
+		super (type);
 		// TODO Auto-generated constructor stub
 	}
 
+	
 }

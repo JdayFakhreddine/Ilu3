@@ -1,0 +1,9 @@
+package carte;
+
+public class JeuDeCarte {
+
+	public JeuDeCarte() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
