@@ -10,10 +10,10 @@ public enum Type {
 	private String botte = "";
 	private String attaque = "";
 	
-	private Type (String attaque , String botte  , String parade ) {
-		this.attaque = attaque ;
-		this.botte = botte ;
-		this.parade = parade ;
+	private Type(String attaque, String parade, String botte) {
+		this.attaque = attaque;
+		this.parade = parade;
+		this.botte = botte;
 	}
 
 	public String getParade() {
@@ -30,3 +30,4 @@ public enum Type {
 }
 	
 	
+

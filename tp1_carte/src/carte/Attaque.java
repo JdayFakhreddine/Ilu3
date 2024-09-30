@@ -2,7 +2,7 @@ package carte;
 
 public class Attaque extends Bataille{
 
-	public Attaque() {
+	public Attaque(Type type) {
 	super (type); }
 
 	@Override

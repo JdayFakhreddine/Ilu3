@@ -4,19 +4,13 @@ public abstract class Probleme extends Carte{
 	private Type type;
 	
 	protected  Probleme(Type type) {
+		super();
 		this.type = type ;
-		
 	}
 
-	
-	
-	
-	public Type getType() {
+		public Type getType() {
 		return type;
 	}
-
-
-
 
 	@Override
 	public String toString() {
