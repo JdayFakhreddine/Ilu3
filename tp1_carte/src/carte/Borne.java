@@ -1,5 +1,7 @@
 package carte;
 
+import java.util.Objects;
+
 public class Borne extends Carte {
 
     private int km;
@@ -24,4 +26,19 @@ public class Borne extends Carte {
     public String toString() {
         return km + "KM";
     }
-}
+
+	
+
+	
+	@Override
+	public boolean equals(Object object) {
+		if (object instanceof Borne) {
+			Borne borne = (Borne) object;
+			return km == borne.km;
+			
+		}
+		return false;
+	}
+   
+    }
+

@@ -73,5 +73,26 @@ public class JeuDeCarte {
         public Carte getCarte() {
             return carte;
         }
-    }
-}
+    } 
+   private int count ( Carte carte , Carte[] cartes) {
+	   int compteurCarte = 0;
+	   for (Carte c_carte : cartes) {
+		   if (c_carte.equals(carte))
+			   compteurCarte ++;
+	   }
+		return compteurCarte;
+   }
+   public boolean checkCount () {
+		boolean diffTableau = true;
+		Carte[] cartes = donnerCartes();
+		for(Configuration config : configuration) {
+			if(count(config.carte, cartes) != config.getNbExemplaires()) {
+				System.out.println(config.getCarte().toString() + config.getNbExemplaires() + count(config.carte, cartes));
+				diffTableau = false;
+			}
+		}
+		return diffTableau;
+	}
+   }
+    
+
